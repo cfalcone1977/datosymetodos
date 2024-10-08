@@ -43,17 +43,16 @@ function DibujarGuiones(cantidad:number,mensaje:string="")
                                             console.log(guiones);
                          }
 }
-
+console.clear();
 DibujarGuiones(80);
 DibujarGuiones(80,"CONVERTIR A CamelCase");
 DibujarGuiones(80);
 texto=readlineSync.question(`Ingrese un testo a convertir: `);
 palabras=texto.split(" ");
 textofinal="";
-console.log(palabras);
+//console.log(palabras);
 //prueba con una sola palabra:
 //textofinal=(palabras[1].charAt(0).toUpperCase()) + palabras[1].substring(1,palabras[1].length)+textofinal;
-
 
 for (indice = 0;indice < palabras.length;indice=indice+1) 
     {
@@ -63,4 +62,5 @@ for (indice = 0;indice < palabras.length;indice=indice+1)
                         textofinal=textofinal+ ((palabras[indice].charAt(0).toUpperCase()) + palabras[indice].substring(1,palabras[indice].length));
                            }                 
     }
-console.log(textofinal);
+console.warn(textofinal);
+DibujarGuiones(80);
