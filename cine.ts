@@ -16,6 +16,8 @@ import * as readlineSync from "readline-sync";
 let cantButacas,vacias: number;
 let cine:boolean[]= new Array ();
 
+
+//esta funcion crea valores booleanos al Azar par cada elemento asientos y devuelve la cantidad de asientos vacios!!
 function ocupacionCineAzar(asientos:number):number
 {
  let indice:number;   
@@ -38,10 +40,9 @@ function ocupacionCineAzar(asientos:number):number
 
 console.clear();
 cantButacas=readlineSync.questionInt("Ingrese la cantidad de butacas que posee el cine:");
-ocupacionCineAzar(cantButacas);
 vacias=ocupacionCineAzar(cantButacas);
 console.log(cine);
-console.log(`La cantidad de butcas ocupadas es: ${cantButacas-vacias} y ${vacias} vacias.`);
+console.log(`La cantidad de butacas ocupadas es: ${cantButacas-vacias} y ${vacias} vacias.`);
 
 
 
